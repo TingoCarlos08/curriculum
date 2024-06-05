@@ -1,96 +1,147 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Currículum</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-            padding: 20px;
-        }
-        h1, h2, h3 {
-            color: #333;
-        }
-        .section {
-            margin-bottom: 20px;
-        }
-        .section h2 {
-            margin-bottom: 10px;
-        }
-        .section ul {
-            list-style-type: none;
-            padding: 0;
-        }
-        .section ul li {
-            margin-bottom: 5px;
-        }
-    </style>
+    <link rel="stylesheet" href="stylesheets/style.css">
 </head>
+
 <body>
-    <div class="container">
-        <header>
-            <h1>Carlos Raúl Tingo Borbor</h1>
-            <p>Dirección, Guayaquil, Ecuador | 0999999999 | ctingo@epol.edu.ec</p>
-        </header>
-        
-        <section class="section">
-            <h2>Perfil Profesional</h2>
-            <p>Estudiante de computación con experiencia en mineria de datos y uso de POWER BI, además del manenjo de bases de datos.</p>
-        </section>
-        
-        <section class="section">
-            <h2>Educación</h2>
-            <ul>
-                <li><strong>Ingeniero en Ciencias Computacionales:</strong> Escuela Superior Politecnica del litoral - En proceso</li>
-                <!-- Repite este patrón para cada institución educativa y título -->
-            </ul>
-        </section>
-        
-        <section class="section">
-            <h2>Experiencia Laboral</h2>
-            <ul>
-                <li>
-                    <strong>Administrador de Base de Datos:</strong> INVENSYS S.A. - 01/03/24 - 20/05/24
+    <header>
+        <h1>Carlos Raúl Tingo Borbor</h1>
+        <p>Guayaquil, Ecuador | +593-95-864-4446 | ctingo@epol.edu.ec</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#PerfilProfesional">Perfil Profesional</a></li>
+            <li><a href="#Habilidades">Habilidades</a></li>
+            <li><a href="#Experiencias">Experiencia</a></li>
+            <li><a href="#Idiomas">Idiomas</a></li>
+
+            <li><a href="#Contacto">Contacto</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="general">
+            <section id="PerfilProfesional" class="section profile-section">
+                <div class="profile-info">
+                    <h2>Perfil Profesional</h2>
+
+                    <p>Estudiante de computación con experiencia en minería de datos y uso de POWER BI, además del
+                        manejo de
+                        bases de datos con
+                        experiencia en programación y aprendizaje
+                        autónomo en busca de desafíos para crecer de
+                        manera profesional.
+                    </p>
+
                     <ul>
-                        <li>Minería de datos, </li>
-                        <!-- Repite este patrón para cada experiencia laboral -->
+                        <li><strong>Escuela Superior Politécnica del Litoral</strong></li>
+                        <p>Estudiante de Computación</p>
+                        <p>Mayo 2020 - En proceso</p>
+                        <ul>
+                            <li>Vicepresidente de Comisión de Diseño y Comunicacion FEPOL</li>
+                        </ul>
                     </ul>
-                </li>
-            </ul>
+                </div>
+                <div class="profile-image">
+                    <img src="foto-perfil.jpg" alt="Foto de perfil">
+                </div>
+            </section>
+
+
+            <section id="Habilidades" class="section">
+                <h2>Habilidades</h2>
+                <ul>
+                    <li><strong>Tools:</strong> Python, Java, MySql, SQL, C,
+                        Linux, Dax.</li>
+                    <li><strong>General:</strong> Git, Microsoft Office,
+                        Figma, LucidChart, Power Bi.</li>
+                    <li><strong>Personal:</strong> Autodidacta,
+                        liderazgo, trabajo en equipo,
+                        pensamiento creativo.</li>
+                </ul>
+            </section>
+
+            <section id="Experiencias" class="section">
+                <h2>Experiencia Laboral</h2>
+                <ul>
+                    <li>
+                        <strong>Administrador de Base de Datos:</strong> INVENSYS S.A. - 01/03/24 - 20/05/24
+                        <ul>
+                            <li>Minería de datos</li>
+                            <li>Integración de soluciones BI</li>
+                            <li>Creación de DashBoards</li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <strong>Administrador de Sistemas:</strong> Pasantías - ToniCorp 2019
+                        <ul>
+                            <li>Asistencia Técnica</li>
+                            <li>Registros de Dispositivos</li>
+                            <li>Manejor de Información</li>
+                        </ul>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="Idiomas" class="section">
+                <h2>Idiomas</h2>
+                <ul>
+                    <li>Español - Nativo</li>
+                    <li>Ingles - Avanzado</li>
+                    <li>Portugués - intermedio</li>
+                </ul>
+            </section>
+
+
         </section>
-        
+
         <section class="section">
-            <h2>Habilidades</h2>
-            <ul>
-                <li>Habilidad 1</li>
-                <li>Habilidad 2</li>
-                <!-- Agrega todas tus habilidades relevantes -->
-            </ul>
+            <h2>Evidencias Pasantías</h2>
+            <div>
+                <h3>Extracción de la Base de Datos</h3>
+                <img src="Evidencia foto.jpg" alt="Evidencia">
+               
+            </div>
+            <div>
+                <h3>Extracción de la Base de Datos</h3>
+                <video width="400" controls>
+                    <source src="Evidencia.mp4" type="video/mp4">
+                    Tu navegador no soporta la etiqueta de video.
+                </video>
+            </div>
         </section>
-        
+
         <section class="section">
-            <h2>Idiomas</h2>
-            <ul>
-                <li>Idioma 1 - Nivel de Competencia</li>
-                <li>Idioma 2 - Nivel de Competencia</li>
-                <!-- Agrega todos los idiomas y sus niveles de competencia -->
-            </ul>
+            <h2>Contacto</h2>
+            <div id="contacto-mapa">
+                <form id="formulario">
+                    <label for="name">Nombre:</label><br>
+                    <input type="text" id="name" name="name" required="required"><br>
+                    <label for="email">Correo electrónico:</label><br>
+                    <input type="email" id="email" name="email" required="required"><br>
+                    <label for="message">Mensaje:</label><br>
+                    <textarea id="message" name="message" required="required"></textarea><br>
+                    <button type="submit" name="enviar">Enviar</button>
+                    <button type="reset" name="reiniciar">Cancelar</button>
+                </form>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d127584.51450030041!2d-80.04697183567608!3d-2.1475304351033766!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d72f925e5bfdb%3A0x327cdb9f7f4ba3b2!2sEscuela%20Superior%20Politécnica%20del%20Litoral%20(ESPOL)!5e0!3m2!1ses-419!2sec!4v1716782474152!5m2!1ses-419!2sec"
+                    style="border:0;" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
-        
-        <section class="section">
-            <h2>Referencias</h2>
-            <p>Disponibles a petición.</p>
-        </section>
-        
-    </div>
+
+
+    </main>
+    <footer>
+        <p>© 2024 Carlos Raúl Tingo Borbor. Todos los derechos reservados. Contacto: ctingo@epol.edu.ec</p>
+        <p>Sigueme en <a href="https://github.com/TingoCarlos08" target="_blank">GitHub</a></p>
+    </footer>
 </body>
+
 </html>
-
-
